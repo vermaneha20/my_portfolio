@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cf64bc045.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <img src="image/logo1.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <h2 id="info">Fresher</h2>
+        <h1>Hi,I am <span>Neha</span><br> Verma from U.P,India</h1>
+    </div>
+    </div>
+    </div>
+    <!-- about----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/neha_about.png" >
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Seeking a beginner role to enhance and explore my technical knowledge gained at Dr. A.P.J Abdul Kalam Technical University,
+                        Lucknow Uttar Pradesh in the last four years. I hold a B.Tech degree from Rajkiya Engineering College,Ambedkar Nagar college 
+                        and I was the captain of girls volleyball team in my college.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internships</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>C++ language</li>
+                            <li>python language</li>
+                            <li><span>frontend development : </span><br>HTML,CSS,java script and React js</li>
+                            <li><span>Backend development : </span><br>Node js and mongodb</li>
+                            <li><span>Courses : </span><br>SQL ,DBMS and Machine learning</li>
+                            
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br> B.Tech (Information Technology)</li>
+                            <li><span>2017-2018</span><br> Intermediate (PCM)</li>
+                            <li><span>2015-2016</span><br> High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li>python</li>
+                            <li>Web development</li>
+                            <li>Blockchain</li>
+                        </ul>
+                    </div>
+                
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- services --------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p>Lprem inpus doler sit,consecture adipiscing elit.Sed nulla nibh,
+                        tincidunt sit amet sapit quis.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop"></i>
+                    <h2> UI/UX Design</h2>
+                    <p>Lprem inpus doler sit,consecture adipiscing elit.Sed nulla nibh,
+                        tincidunt sit amet sapit quis.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-adn"></i>
+                    <h2> App Design</h2>
+                    <p>Lprem inpus doler sit,consecture adipiscing elit.Sed nulla nibh,
+                        tincidunt sit amet sapit quis.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/p1.jpeg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This app connect you to talented people around the world.</p>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/p2.jpeg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This app connect you to talented people around the world.</p>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/pp3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This app connect you to talented people around the world.</p>
+                        <a href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- contact-------------- -->
+<div id="contact">
+    <div id="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa fa-paper-plane"></i>nverma00853@gamil.com</p>
+            <p><i class="fa fa-phone"></i>8112844438</p>
+            <div class="social-icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+               <a href=""><i class="fa fa-instagram"></i></a>
+               <a href=""><i class="fa fa-twitter"></i></a>
+               <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+               <a href="image/Neha's Resume (7).pdf" download class="btn btn2">Download CV</a>
+       
+        </div>
+             <div class="contact-right">
+    
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+         <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+   </div>
+   <div class="copyright">
+   <p> copyright @neha. Made with <i class="fa fa-heart"></i> by Neha Verma</p>
+
+   </div>
+ </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+      function openmenu(){
+        sidemenu.style.right='0';
+      }
+      function closemenu(){
+        sidemenu.style.right='-200px';
+      }
+    
+    
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw1PxcPqgHx9cirMcSDHuRF84_2GPQc8Izk7jsUTRYOqI2WkDtHJNzP4aEvj8rCQeR5/exec'
+        const form = document.forms['submit-to-google-sheet']
+       const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message send successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
